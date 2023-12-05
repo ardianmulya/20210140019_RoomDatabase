@@ -7,7 +7,8 @@ import androidx.lifecycle.ViewModel
 import com.example.roomsiswa.repositori.RepositoriSiswa
 
 class EntryViewModel (private val repositoriSiswa: RepositoriSiswa): ViewModel() {
-
+    var uiStateSiswa by mutableStateOf(UIStateSiswa())
+        private set
 }
 data class UIStateSiswa(
     val detailSiswa : DetailSiswa = DetailSiswa(),
