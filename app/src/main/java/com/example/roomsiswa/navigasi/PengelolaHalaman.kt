@@ -24,7 +24,7 @@ import com.example.roomsiswa.ui.Halaman.HomeScreen
 
 @Composable
 fun SiswaApp(navController: NavHostController = rememberNavController()){
-
+    HostNavigasi(navController = navController)
 }
 
 @OptIn(ExperimentalMaterial3Api::class)
