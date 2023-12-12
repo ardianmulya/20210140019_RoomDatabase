@@ -51,6 +51,7 @@ fun EntrySiswaScreen(
             SiswaTopAppBar(
                 title = stringResource(DestinasiEntry.titleRes),
                 canNavigateBack = true,
+                navigateUp = navigateBack,
                 scrollBehavior = scrollBehavior
             )
         }
@@ -62,7 +63,7 @@ fun EntrySiswaScreen(
             onSaveClick = {
                 coroutineScope.launch {
                     viewModel.saveSiswa()
-                    navigateBack
+                    navigateBack()
                 }
             },
             modifier = Modifier
